@@ -1,0 +1,37 @@
+{% extends 'bookings/base.html' %}
+{% load static %}
+{% block content %}
+<div class="card">
+    <h2>{{ action }} Booking</h2>
+    <form id="bookingForm" method="post" novalidate>
+        {% csrf_token %}
+        <label for="customer_name">Customer Name</label>
+        <input type="text" id="customer_name" name="customer_name" required
+               value="{{ booking.customer_name|default:'' }}">
+        <span class="error-text" id="customer_name_error"></span>
+
+        <label for="event_type">Event Type</label>
+        <input type="text" id="event_type" name="event_type" required
+               value="{{ booking.event_type|default:'' }}">
+        <span class="error-text" id="event_type_error"></span>
+
+        <label for="booking_date">Booking Date</label>
+        <input type="date" id="booking_date" name="booking_date" required
+               value="{{ booking.booking_date|default:'' }}">
+        <span class="error-text" id="booking_date_error"></span>
+
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone" required
+               value="{{ booking.phone|default:'' }}">
+        <span class="error-text" id="phone_error"></span>
+
+        <div class="form-actions">
+            <button type="submit" class="btn">Save Booking</button>
+            <a href="{% url 'booking_list' %}" class="btn btn-secondary">Cancel</a>
+        </div>
+    </form>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{% static 'js/validate.js' %}"></script>
+{% endblock %}

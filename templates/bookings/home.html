@@ -1,0 +1,15 @@
+{% extends 'bookings/base.html' %}
+{% block content %}
+<div class="card">
+    <p class="welcome-text">
+        Welcome to the Photography Studio Booking System. This application helps the studio
+        keep track of all its photography session bookings — capturing the customer's name,
+        event type, booking date, and phone number — so that appointments are never lost or
+        double-booked.
+    </p>
+    <div class="btn-group">
+        <a href="{% url 'booking_add' %}" class="btn">Add Booking</a>
+        <a href="{% url 'booking_list' %}" class="btn btn-secondary">View Bookings</a>
+    </div>
+</div>
+{% endblock %}

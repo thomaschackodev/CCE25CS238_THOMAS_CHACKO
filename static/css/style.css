@@ -1,0 +1,156 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f8;
+    color: #2b2b2b;
+    line-height: 1.6;
+}
+
+header.site-header {
+    background: #1f2937;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header.site-header h1 {
+    font-size: 28px;
+    letter-spacing: 0.5px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+.welcome-text {
+    text-align: center;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    background: #2563eb;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn:hover { background: #1d4ed8; }
+.btn-secondary { background: #6b7280; }
+.btn-secondary:hover { background: #4b5563; }
+.btn-danger { background: #dc2626; }
+.btn-danger:hover { background: #b91c1c; }
+.btn-small { padding: 6px 14px; font-size: 14px; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+th {
+    background: #1f2937;
+    color: #fff;
+}
+
+tr:nth-child(even) { background: #f9fafb; }
+
+form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.error-text {
+    color: #dc2626;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.form-actions { margin-top: 20px; }
+
+.message-error {
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.message-success {
+    background: #dcfce7;
+    color: #166534;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.welcome-user {
+    text-align: right;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #374151;
+}
+
+footer.site-footer {
+    text-align: center;
+    padding: 20px;
+    color: #6b7280;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+.action-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.action-links a.delete-link { color: #dc2626; }
+
+.auth-box {
+    max-width: 400px;
+    margin: 60px auto;
+}
